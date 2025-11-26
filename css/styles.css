@@ -20,7 +20,24 @@ button { padding:8px 12px; border:none; background:#0366d6; color:white; border-
 
 .activo { font-weight:bold; color:#94b1ec; text-decoration: underline; }
 
-footer { padding: 1rem; text-align:center; border-top:1px solid #ffffff; margin-top:1rem; }
+footer {
+  background: #f0f0f0;
+  padding: 15px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer-container img {
+  width: 32px;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+.footer-container a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 @media (max-width:600px) {
   .gallery img { width: 48%; height: 120px; }
