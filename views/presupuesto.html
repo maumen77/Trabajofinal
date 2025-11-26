@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Presupuesto</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Ositos Lusito</div>
+    <nav class="main-nav">
+      <a href="/index.html">Inicio</a> 
+      <a href="galeria.html">Galería</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Solicitar Presupuesto</h2>
+
+    <form id="presupuesto-form" novalidate>
+      <fieldset>
+        <legend>Datos de contacto</legend>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" required>
+        <label for="apellidos">Apellidos</label>
+        <input id="apellidos" type="text" required>
+        <label for="telefono">Teléfono</label>
+        <input id="telefono" type="tel" required>
+        <label for="email">Correo electrónico</label>
+        <input id="email" type="email" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Presupuesto</legend>
+
+        <label for="producto">Producto (elige 1)</label>
+        <select id="producto">
+          <option value="web" data-price="500">Sitio web básico — 500 €</option>
+          <option value="tienda" data-price="1200">Tienda online — 1200 €</option>
+          <option value="app" data-price="2500">Aplicación web — 2500 €</option>
+        </select>
+
+        <label for="plazo">Plazo (meses) — aplica descuento si > X</label>
+        <input id="plazo" type="number" min="1" value="1">
+
+        <p>Extras:</p>
+        <label><input type="checkbox" class="extra" data-price="50" value="hosting"> Hosting — 50 €</label>
+        <label><input type="checkbox" class="extra" data-price="100" value="seo"> SEO básico — 100 €</label>
+        <label><input type="checkbox" class="extra" data-price="80" value="mant"> Mantenimiento — 80 €</label>
+
+        <p>Presupuesto (se actualiza automáticamente): <strong id="precio-final">0 €</strong></p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Condiciones</legend>
+        <label><input id="acepto" type="checkbox" required> Acepto las condiciones y la política de privacidad</label>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+      <button type="reset">Reset</button>
+      <div id="form-messages" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <script src="/js/validation.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

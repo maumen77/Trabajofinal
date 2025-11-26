@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Lanzamiento web",
+    "date": "2025-05-01",
+    "summary": "Hemos lanzado la nueva web con mejoras."
+  },
+  {
+    "id": 2,
+    "title": "Mantenimiento mensual",
+    "date": "2025-04-15",
+    "summary": "Ofrecemos soporte y mantenimiento."
+  }
+]
