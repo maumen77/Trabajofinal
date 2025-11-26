@@ -22,7 +22,7 @@ function loadNews(){
 function buildGallery(){
   const gallery = document.getElementById('gallery');
   if (!gallery) return;
-  const images = ['/images/img1.jpg','/images/img2.jpg','/images/img3.jpg'];
+  const images = ['../images/img1.jpg','../images/img2.jpg','../images/img3.jpg'];
   images.forEach(src => {
     const img = document.createElement('img');
     img.src = src;
